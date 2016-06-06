@@ -9,5 +9,9 @@ This repository is a sample logger wrapper for slf4j api including loggback impl
 
 2. wrap other non OSGi jars
 
-3. control logging level in runtime using configuration admin
+3. control logging level in runtime
+
+4. Bundle activator
+
+
 
