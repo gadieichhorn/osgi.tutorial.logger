@@ -1,0 +1,42 @@
+#
+# OSGI TUTORIAL LOGGER FOO PROVIDER BUNDLE 
+#
+
+
+Bundle-Version:					1.0.0.${tstamp}
+Bundle-Description: 				\
+		Test logger in provider
+
+Private-Package:  \
+	osgi.tutorial.logger.foo.provider
+	
+-buildpath:  \
+	osgi.enroute.base.api;version=1.0
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
+
+-includeresource: \
+		{readme.md},  \
+		{configuration=configuration}
+
+-runrequires: \
+	osgi.identity;filter:='(osgi.identity=osgi.tutorial.logger.foo.provider)',\
+	osgi.identity;filter:='(osgi.identity=osgi.tutorial.logger.adapter)',\
+	osgi.identity;filter:='(osgi.identity=osgi.enroute.configurer.simple.provider)'
+	
+-runbundles: \
+	ch.qos.logback.classic;version='[1.1.7,1.1.8)',\
+	ch.qos.logback.core;version='[1.1.7,1.1.8)',\
+	jul.to.slf4j;version='[1.7.21,1.7.22)',\
+	org.apache.felix.configadmin;version='[1.8.6,1.8.7)',\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	org.apache.felix.scr;version='[2.0.0,2.0.1)',\
+	org.eclipse.equinox.coordinator;version='[1.3.100,1.3.101)',\
+	org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)',\
+	org.osgi.service.metatype;version='[1.3.0,1.3.1)',\
+	osgi.enroute.configurer.simple.provider;version='[1.2.2,1.2.3)',\
+	osgi.tutorial.logger.adapter;version=snapshot,\
+	osgi.tutorial.logger.foo.provider;version=snapshot,\
+	slf4j.api;version='[1.7.21,1.7.22)'
+-resolve: auto

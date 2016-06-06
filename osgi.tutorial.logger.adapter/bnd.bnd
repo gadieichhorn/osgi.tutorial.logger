@@ -1,0 +1,40 @@
+#
+# OSGI TUTORIAL LOGGER ADAPTER BUNDLE 
+#
+
+
+Bundle-Version:					1.0.0.${tstamp}
+Bundle-Description: 				\
+	Logger implementation
+	
+Private-Package:  \
+	osgi.tutorial.logger.adapter
+	
+-buildpath: \
+	osgi.enroute.base.api;version=1.0,\
+	jul.to.slf4j;version=1.7.21,\
+	slf4j.api;version=1.7.21,\
+	ch.qos.logback.classic;version=1.1.7,\
+	ch.qos.logback.core;version=1.1.7
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
+
+-includeresource: {readme.md}
+
+-runrequires: osgi.identity;filter:='(osgi.identity=osgi.tutorial.logger.adapter)'
+	
+-resolve: auto
+
+Bundle-Activator: osgi.tutorial.logger.adapter.JulToSlf4jActivator
+-runbundles: \
+	ch.qos.logback.classic;version='[1.1.7,1.1.8)',\
+	ch.qos.logback.core;version='[1.1.7,1.1.8)',\
+	jul.to.slf4j;version='[1.7.21,1.7.22)',\
+	org.apache.felix.configadmin;version='[1.8.6,1.8.7)',\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	org.apache.felix.scr;version='[2.0.0,2.0.1)',\
+	org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)',\
+	org.osgi.service.metatype;version='[1.3.0,1.3.1)',\
+	osgi.tutorial.logger.adapter;version=snapshot,\
+	slf4j.api;version='[1.7.21,1.7.22)'

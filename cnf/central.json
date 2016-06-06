@@ -1,0 +1,13 @@
+{
+ "revisionRefs":[{
+  "artifactId":"logback-classic","baseline":"1.1.7","bsn":"ch.qos.logback.classic","created":1459283076388,"description":"logback-classic module","groupId":"ch.qos.logback","md5":"7373C8AD1BFA162332D7D13C4596C2A1","name":"Logback Classic Module","phase":"MASTER","revision":"9865CF6994F9FF13FCE0BF93F2054EF6C65BB462","size":304075,"urls":["http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar"],"version":"1.1.7"
+ },{
+  "artifactId":"logback-core","baseline":"1.1.7","bsn":"ch.qos.logback.core","created":1459283016925,"description":"logback-core module","groupId":"ch.qos.logback","md5":"4021551DE5018DFA4B79EC553280F00A","name":"Logback Core Module","phase":"MASTER","revision":"7873092D39EF741575CA91378A6A21C388363AC8","size":470782,"urls":["http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar"],"version":"1.1.7"
+ },{
+  "artifactId":"jul-to-slf4j","baseline":"1.7.21","bsn":"jul.to.slf4j","created":1459795151000,"description":"JUL to SLF4J bridge","groupId":"org.slf4j","md5":"21B2ED33C9F08F437DFD149755FB769F","name":"jul-to-slf4j","phase":"MASTER","revision":"2F22C882FFA479D1E9FF4EB0E8E2C29F2A0871ED","size":4597,"urls":["http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.jar"],"version":"1.7.21"
+ },{
+  "artifactId":"slf4j-api","baseline":"1.7.21","bsn":"slf4j.api","created":1459794999000,"description":"The slf4j API","groupId":"org.slf4j","md5":"C9BE56284A92DCB2576679282EFF80BF","name":"slf4j-api","phase":"MASTER","revision":"139535A69A4239DB087DE9BAB0BEE568BF8E0B70","size":41071,"urls":["http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar"],"version":"1.7.21"
+ },{
+  "artifactId":"slf4j-api","baseline":"1.7.20","bsn":"slf4j.api","created":1459264341000,"description":"The slf4j API","groupId":"org.slf4j","md5":"DB9E377855A49BF2D737BC434A74790E","name":"slf4j-api","phase":"MASTER","revision":"867D63093EFF0A0CB527BF13D397D850AF3DCAE3","size":40744,"urls":["http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.20/slf4j-api-1.7.20.jar"],"version":"1.7.20"
+ }]
+}

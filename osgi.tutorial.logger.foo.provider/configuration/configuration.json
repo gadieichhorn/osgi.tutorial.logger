@@ -1,0 +1,15 @@
+[
+	{
+		"service.factoryPid": "osgi.tutorial.logger.configuration.factory",
+		"service.pid" : "foo",
+		"package.name": "osgi.tutorial.logger.foo.provider.FooImpl",
+		"log.level": "WARN"
+	},
+	{
+		"service.factoryPid": "osgi.tutorial.logger.configuration.factory",
+		"service.pid" : "bar",
+		"package.name": "osgi.tutorial.logger.foo.provider.BarImpl",
+		"log.level": "INFO"
+	}
+	
+]
